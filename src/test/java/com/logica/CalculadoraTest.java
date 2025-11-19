@@ -49,5 +49,35 @@ public class CalculadoraTest {
 		Assertions.assertEquals(0, total);
 	}
 	
+	@Test
+	public void testFatorialCinco() {
+		Integer fatorial = calc.fatorial(5);
+		Assertions.assertEquals(120, fatorial);
+	}
+	
+	@Test
+	public void testFatorialQuatro() {
+		Integer fatorial = calc.fatorial(4);
+		Assertions.assertEquals(24, fatorial);
+	}
+	
+	@Test
+	public void testFatorialZero() {
+		Integer fatorial = calc.fatorial(0);
+		Assertions.assertEquals(1, fatorial);
+	}
+	
+	@Test
+	public void testFatorialUm() {
+		Integer fatorial = calc.fatorial(1);
+		Assertions.assertEquals(1, fatorial);
+	}
+	
+	@Test
+	public void testFatorialDois() {
+		Integer fatorial = calc.fatorial(2);
+		Assertions.assertEquals(2, fatorial);
+	}
+	
 
 }

@@ -20,4 +20,15 @@ public class Calculadora {
 		}
 		return total;		
 	}
+	
+	public Integer fatorial(Integer valor) {
+		Integer fatorial = 1;
+		
+		for (int i = 1; i <= valor; i++) {
+			fatorial = fatorial * i;
+		}
+		return fatorial;
+	}
+	
+	
 }
