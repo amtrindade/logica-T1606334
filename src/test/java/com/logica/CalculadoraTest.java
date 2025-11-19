@@ -10,7 +10,7 @@ public class CalculadoraTest {
 
 	@BeforeEach
 	public void setUp() throws Exception {
-		calc = new Calculadora();		
+		calc = new Calculadora();	
 	}
 
 	@Test
@@ -78,6 +78,13 @@ public class CalculadoraTest {
 		Integer fatorial = calc.fatorial(2);
 		Assertions.assertEquals(2, fatorial);
 	}
+	
+	@Test
+	public void testFatorialNegativo() {
+		Integer fatorial = calc.fatorial(-2);
+		Assertions.assertEquals(null, fatorial);
+	}
+	
 	
 
 }

@@ -22,6 +22,11 @@ public class Calculadora {
 	}
 	
 	public Integer fatorial(Integer valor) {
+		
+		if (valor < 0) {
+			return null;
+		}
+		
 		Integer fatorial = 1;
 		
 		for (int i = 1; i <= valor; i++) {
@@ -29,6 +34,5 @@ public class Calculadora {
 		}
 		return fatorial;
 	}
-	
 	
 }
